@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_primary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/avatar_de_hombre" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oldwest"
+                android:text="@string/mi_perfil_personal"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:fontFamily="@font/bodoni"
+                    android:hint="@string/nombre"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/hint_color" />
+
+                <EditText
+                    android:id="@+id/etApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:fontFamily="@font/bodoni"
+                    android:hint="@string/apellido"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/hint_color" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/bodoni"
+                    android:hint="@string/correo_electr_nico"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/dark_brown"
+                    android:textColorHint="@color/hint_color" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rbMasc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:text="@string/masculino"
+                        android:textColor="@color/dark_brown" />
+
+                    <RadioButton
+                        android:id="@+id/rbFem"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:text="@string/femenino"
+                        android:textColor="@color/dark_brown"
+                        tools:ignore="VisualLintButtonSize" />
+
+                    <RadioButton
+                        android:id="@+id/rbOtro"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:text="@string/otro"
+                        android:textColor="@color/dark_brown" />
+
+                </RadioGroup>
+
+                <ListView
+                    android:id="@+id/paisesListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scrollbars="vertical"
+                    android:verticalScrollbarPosition="left" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/lectura"
+                        android:textColor="@color/dark_brown" />
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/deporte"
+                        android:textColor="@color/dark_brown" />
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/m_sica"
+                        android:textColor="@color/dark_brown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/arte"
+                        android:textColor="@color/dark_brown" />
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/cocina"
+                        android:textColor="@color/dark_brown" />
+
+                    <CheckBox
+                        android:id="@+id/cBHobbie6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_icon"
+                        android:fontFamily="@font/bodoni"
+                        android:padding="5dp"
+                        android:text="@string/viajar"
+                        android:textColor="@color/dark_brown" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/opseekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:max="10"
+                    android:min="0"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="17dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/costum_seekbar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/thumb_seekbar" />
+
+                <TextView
+                    android:id="@+id/tvop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bodoni"
+                    android:text="@string/satisfaction_level"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/switchsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bodoni"
+                    android:splitTrack="false"
+                    android:text="@string/desea_suscribirse_a_un_bolet_n_informativo"
+                    android:textColor="@color/dark_brown"
+                    android:thumb="@drawable/thumb_switch"
+                    android:track="@drawable/custom_switch" />
+
+                <Button
+                    android:id="@+id/buttonEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/enviar" />
+
+                <TextView
+                    android:id="@+id/tvresum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:fontFamily="@font/bodoni"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_brown" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

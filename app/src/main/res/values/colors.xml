@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="blue_navy">#0D3B66</color>
+    <color name="blue_sky">#4C9FEC</color>
+    <color name="sand_beige">#F5DEB3</color>
+    <color name="gold_yellow">#FFD700</color>
+    <color name="crimson_red">#990000</color>
+    <color name="bone_white">#F5F5DC</color>
+    <color name="dark_brown">#3B2F2F</color>
+    <color name="hint_color">#8B5E3C</color>
+    <color name="black">#000000</color>
+
+    <!-- Ejemplo de uso en fondos -->
+    <color name="background_primary">#F5DEB3</color> <!-- Beige Arenoso -->
+    <color name="background_secondary">#0D3B66</color> <!-- Azul Marino -->
+
+    <!-- Ejemplo de uso en botones -->
+    <color name="button_primary">#990000</color> <!-- Rojo Carmesí -->
+    <color name="button_secondary">#FFD700</color> <!-- Amarillo Oro -->
+
+    <!-- Ejemplo de uso en texto -->
+    <color name="text_primary">#000000</color> <!-- Negro -->
+    <color name="text_secondary">#F5F5DC</color> <!-- Blanco Hueso -->
+    <!-- Colores específicos para la SeekBar -->
+    <color name="seekbar_progress">#990000</color> <!-- Rojo Carmesí para el progreso principal -->
+    <color name="seekbar_secondary_progress">#FFD700</color> <!-- Amarillo Oro para progreso secundario -->
+</resources>

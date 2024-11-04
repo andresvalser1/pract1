@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pract1</string>
+    <string name="mi_perfil_personal">My Personal Profile</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last Name</string>
+    <string name="correo_electr_nico">Email</string>
+    <string name="femenino">Female</string>
+    <string name="otro">Other</string>
+    <string name="masculino">Male</string>
+    <string name="lectura">Reading</string>
+    <string name="deporte">Sport</string>
+    <string name="m_sica">Music</string>
+    <string name="arte">Art</string>
+    <string name="cocina">Cooking</string>
+    <string name="viajar">Traveling</string>
+    <string name="desea_suscribirse_a_un_bolet_n_informativo">Do you wish to subscribe to a newsletter?</string>
+    <string name="enviar">Send</string>
+    <string name="satisfaction_level">satisfaction level: 0</string>
+</resources>
